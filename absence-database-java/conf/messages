@@ -1,0 +1,3 @@
+# Messages
+
+students.list.title={0,choice,0#No students|1#One student|1<{0,number,integer} students} found

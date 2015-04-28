@@ -1,0 +1,14 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>company</find>
+      <find>id</find>
+      <find>comp</find>
+      <find>com</find>
+      <find>page</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>student</replace>
+    </replaceStrings>
+  </component>
+</application>

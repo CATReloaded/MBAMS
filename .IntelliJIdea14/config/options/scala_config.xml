@@ -1,0 +1,5 @@
+<application>
+  <component name="ScalaApplicationSettings">
+    <option name="RENAME_SEARCH_IN_COMMENTS_AND_STRINGS" value="true" />
+  </component>
+</application>

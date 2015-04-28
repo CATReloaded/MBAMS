@@ -1,0 +1,39 @@
+@(id: Long, studentForm: Form[Student])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) } 
+
+@main {
+    
+    <h1>Edit student</h1>
+    
+    @form(routes.Application.update(id)) {
+        
+        <fieldset>
+
+            @inputText(studentForm("name"), '_label -> "Student name", '_help -> "")
+            @inputText(studentForm("mac"), '_label -> "MAC Address", '_help -> "")
+            @inputText(studentForm("one"), '_label -> "Lecture #1", '_help -> "")
+            @inputText(studentForm("two"), '_label -> "Lecture #2", '_help -> "")
+            @inputText(studentForm("three"), '_label -> "Lecture #3", '_help -> "")
+            @inputText(studentForm("four"), '_label -> "Lecture #4", '_help -> "")
+            @inputText(studentForm("five"), '_label -> "Lecture #5", '_help -> "")
+            @inputText(studentForm("six"), '_label -> "Lecture #6", '_help -> "")
+            @inputText(studentForm("seven"), '_label -> "Lecture #7", '_help -> "")
+            @inputText(studentForm("eight"), '_label -> "Lecture #8", '_help -> "")
+
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Save this student" class="btn primary"> or
+            <a href="@routes.Application.list()" class="btn">Cancel</a> 
+        </div>
+        
+    }
+    
+    @form(routes.Application.delete(id), 'class -> "topRight") {
+        <input type="submit" value="Delete this student" class="btn danger">
+    }
+    
+}
