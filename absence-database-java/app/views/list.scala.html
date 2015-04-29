@@ -67,6 +67,7 @@
         <table class="students zebra-striped">
             <thead>
                 <tr>
+                    @header("student_id","Student ID");
                     @header("name", "Student name")
                     @header("mac", "MAC Address")
                     @header("one", "#1")
@@ -83,6 +84,13 @@
 
                 @for(student <- currentPage.getList) {
                     <tr>
+                        <td>
+                        @if(student.student_id == null) {
+                            <em>-</em>
+                        } else {
+                            @student.student_id
+                        }
+                        </td>
                         <td><a href="@routes.Application.edit(student.id)">@student.name</a></td>
                         <td>
                             @if(student.mac == null) {

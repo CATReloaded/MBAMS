@@ -1,12 +1,14 @@
 package controllers;
 
-import play.mvc.*;
-import play.data.*;
-import static play.data.Form.*;
+import models.Student;
+import play.data.Form;
+import play.mvc.Controller;
+import play.mvc.Result;
+import views.html.createForm;
+import views.html.editForm;
+import views.html.list;
 
-import views.html.*;
-
-import models.*;
+import static play.data.Form.form;
 
 /**
  * Manage a database of Students
@@ -17,7 +19,7 @@ public class Application extends Controller {
      * This result directly redirect to application home.
      */
     public static Result GO_HOME = redirect(
-        routes.Application.list(0, "name", "asc", "")
+        controllers.routes.Application.list(0, "name", "asc", "")
     );
     
     /**
@@ -104,6 +106,17 @@ public class Application extends Controller {
         flash("success", "Student has been deleted");
         return GO_HOME;
     }
-    
+
+    public static Result takeAttendace(String mac,String date){
+        Student student = Student.findByMac(mac);
+        if(student != null){
+            Student.recordAttendance(student,date);
+            flash("success", "Attendance for "+student.name+" has been recorded");
+            return GO_HOME;
+        }else {
+            flash("fail", "No Student With this MAC Address");
+            return GO_HOME;
+        }
+    }
 
 }
