@@ -2,20 +2,6 @@
 
 # --- !Ups
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-insert into student (id,name) values ( 1,'Ahmad El-Melegy');
-insert into student (id,name) values ( 2,'Ahmad Ayman');
-insert into student (id,name) values ( 3,'Abdullah Ragab');
-insert into student (id,name) values ( 4,'Ahmed S. ElGhareeb');
-insert into student (id,name) values ( 5,'Alaa Agwa');
-insert into student (id,name) values ( 6,'Amira ElKholey');
-insert into student (id,name) values ( 7,'Amr Atya');
-insert into student (id,name) values ( 8,'Amr ElShaarawi');
-insert into student (id,name) values ( 9,'Aya Atef');
-=======
->>>>>>> Rashwan-master
 insert into student (id,student_id,name,mac) values (  1,54891357,'Ahmad El-Melegy','454876asd');
 insert into student (id,student_id,name,mac) values (  2,15785157913,'Ahmad Ayman','asd7456');
 insert into student (id,student_id,name,mac) values (  3,156873547,'Abdullah Ragab','qwe457ads');
@@ -25,10 +11,7 @@ insert into student (id,name) values (  6,'Amira ElKholey');
 insert into student (id,name) values (  7,'Amr Atya');
 insert into student (id,name) values (  8,'Amr ElShaarawi');
 insert into student (id,name) values (  9,'Aya Atef');
-<<<<<<< HEAD
-=======
->>>>>>> 32789c6ac548908e309b418c712c78d59d2c2288
->>>>>>> Rashwan-master
+
 insert into student (id,name) values ( 10,'Eman Shaaban');
 insert into student (id,name) values ( 11,'Hassan Hafez');
 insert into student (id,name) values ( 12,'Heba Albaba');

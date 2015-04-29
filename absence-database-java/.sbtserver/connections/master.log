@@ -1,51 +1,7 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> Rashwan-master
-New log file opened at Wed Apr 29 11:59:15 EEST 2015 by 28328@home-laptop
-Taking next connection to: 46565
-New client attempting to connect on port: 37091-46565
-  Address = /127.0.1.1:46565
-This client on port 37091 has uuid 2ef5d58c-f33a-48b4-ab26-642b610d4c57 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-2ef5d58c-f33a-48b4-ab26-642b610d4c57
-Taking next connection to: 46565
-<<<<<<< HEAD
-
-=======
-=======
-New log file opened at Wed Apr 29 16:59:35 EEST 2015 by 13192@rashwan
-Taking next connection to: 37390
-New client attempting to connect on port: 42653-37390
-  Address = /127.0.1.1:37390
-This client on port 42653 has uuid 48ba4cef-b325-4fb0-8069-a033053bea0f configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-48ba4cef-b325-4fb0-8069-a033053bea0f
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 37390
->>>>>>> 32789c6ac548908e309b418c712c78d59d2c2288
->>>>>>> Rashwan-master
+New log file opened at Wed Apr 29 19:34:48 EEST 2015 by 5877@home-laptop
+Taking next connection to: 57671
+New client attempting to connect on port: 54280-57671
+  Address = /127.0.1.1:57671
+This client on port 54280 has uuid 333c5ed0-2ef6-4951-85b6-b07193612e86 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-333c5ed0-2ef6-4951-85b6-b07193612e86
+Taking next connection to: 57671

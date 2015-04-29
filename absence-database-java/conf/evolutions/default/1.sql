@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-#--- First database schema
-
-#--- !Ups
-
-create table student (
-  id                        bigint not null AUTO_INCREMENT,
-  name                      varchar(255),
-  mac                       varchar(255) UNIQUE,
-  one                       BOOL,
-  two                       BOOL,
-  three                     BOOL,
-  four                      BOOL,
-  five                      BOOL,
-  six                       BOOL,
-  seven                     BOOL,
-  eight                     BOOL,
-=======
->>>>>>> Rashwan-master
 # --- First database schema
 
 # --- !Ups
@@ -36,23 +15,11 @@ create table student (
   six                       varchar(255) DEFAULT 'absent',
   seven                     varchar(255) DEFAULT 'absent',
   eight                     varchar(255) DEFAULT 'absent',
-<<<<<<< HEAD
-=======
->>>>>>> 32789c6ac548908e309b418c712c78d59d2c2288
->>>>>>> Rashwan-master
 
   constraint pk_student primary key (id))
 ;
 
-<<<<<<< HEAD
 # --- !Downs
-=======
-<<<<<<< HEAD
-#--- !Downs
-=======
-# --- !Downs
->>>>>>> 32789c6ac548908e309b418c712c78d59d2c2288
->>>>>>> Rashwan-master
 
 SET REFERENTIAL_INTEGRITY FALSE;
 
