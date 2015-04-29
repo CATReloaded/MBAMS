@@ -38,7 +38,7 @@ public class Application extends Controller {
     public static Result list(int page, String sortBy, String order, String filter) {
         return ok(
             list.render(
-                Student.page(page, 10, sortBy, order, filter),
+                Student.page(page, 20, sortBy, order, filter),
                 sortBy, order, filter
             )
         );
@@ -72,6 +72,20 @@ public class Application extends Controller {
         flash("success", "Student " + studentForm.get().name + " has been updated");
         return GO_HOME;
     }
+
+
+    /**
+     * Handle the 'Absence check via Android App' submission
+     *
+     * @param mac Mac Address of the student to edit
+     */
+    public static Result updateViaAndroidApp(String mac, boolean absence) {
+        Form<Student> studentForm = form(Student.class).bindFromRequest();
+        studentForm.get().update(mac);
+        flash("success", "Student " + studentForm.get().name + " has been updated");
+        return GO_HOME;
+    }
+
     
     /**
      * Display the 'new student form'.

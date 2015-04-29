@@ -5,7 +5,7 @@
 create table student (
   id                        bigint not null,
   name                      varchar(255),
-  mac                       varchar(255),
+  mac                       varchar(255) UNIQUE,
   one                       BOOL,
   two                       BOOL,
   three                     BOOL,

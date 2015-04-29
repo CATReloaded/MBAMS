@@ -8,7 +8,7 @@ import play.data.validation.*;
 import com.avaje.ebean.*;
 
 /**
- * Student entity managed by Ahmad
+ * Student entity managed by Melegy
  */
 @Entity 
 public class Student extends Model {
@@ -20,7 +20,6 @@ public class Student extends Model {
     
     @Constraints.Required
     public String name;
-    
     public String mac;
     
     public Boolean one;
@@ -34,16 +33,16 @@ public class Student extends Model {
 
 
     /**
-     * Generic query helper for entity Computer with id Long
+     * Generic query helper for entity student with id Long
      */
     public static Finder<Long, Student> find = new Finder<Long, Student>(Long.class, Student.class);
     
     /**
-     * Return a page of computer
+     * Return a page of student
      *
      * @param page Page to display
-     * @param pageSize Number of computers per page
-     * @param sortBy Computer property used for sorting
+     * @param pageSize Number of students per page
+     * @param sortBy student property used for sorting
      * @param order Sort order (either or asc or desc)
      * @param filter Filter applied on the name column
      */

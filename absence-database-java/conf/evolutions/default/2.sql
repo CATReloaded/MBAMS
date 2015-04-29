@@ -2,15 +2,15 @@
 
 # --- !Ups
 
-insert into student (id,name) values (  1,'Ahmad El-Melegy');
-insert into student (id,name) values (  2,'Ahmad Ayman');
-insert into student (id,name) values (  3,'Abdullah Ragab');
-insert into student (id,name) values (  4,'Ahmed S. ElGhareeb');
-insert into student (id,name) values (  5,'Alaa Agwa');
-insert into student (id,name) values (  6,'Amira ElKholey');
-insert into student (id,name) values (  7,'Amr Atya');
-insert into student (id,name) values (  8,'Amr ElShaarawi');
-insert into student (id,name) values (  9,'Aya Atef');
+insert into student (id,name) values ( 1,'Ahmad El-Melegy');
+insert into student (id,name) values ( 2,'Ahmad Ayman');
+insert into student (id,name) values ( 3,'Abdullah Ragab');
+insert into student (id,name) values ( 4,'Ahmed S. ElGhareeb');
+insert into student (id,name) values ( 5,'Alaa Agwa');
+insert into student (id,name) values ( 6,'Amira ElKholey');
+insert into student (id,name) values ( 7,'Amr Atya');
+insert into student (id,name) values ( 8,'Amr ElShaarawi');
+insert into student (id,name) values ( 9,'Aya Atef');
 insert into student (id,name) values ( 10,'Eman Shaaban');
 insert into student (id,name) values ( 11,'Hassan Hafez');
 insert into student (id,name) values ( 12,'Heba Albaba');
