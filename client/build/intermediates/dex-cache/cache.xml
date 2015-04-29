@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-c5330fc14f55bc5ef86340f6ee7eb6b39cdde0ac.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-e6b410fedd0948d43032e2ff3f6644d7aeef0db3.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-c070796e5e699efc9306817201e2d5949f5d54cc.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-44600a270d6a89feb4d5e80fc68aef141d82ac15.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-3d86cd1c28d8f14474644ef62117c9982334bf01.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-2d2eeb9fafbd70af4e99f56a0f0adf96ab7eab12.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-5ef97f1dd9036b2bbfaa21a4f0a875bd2caadca6.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-6c3646a87aa76ce24478724677ffd55df42bec08.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-69e740ab908ef6b2ee463f5d1713398bf757d6e8.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-3a0e50192473ccaea3c0362fe446e5d4c412e1e6.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-9e2413114dca2eff6637f5426bc58f9b013d6af2.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-369019a5991e4768c9a01cecbabc831b81eab440.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-3e0830ee9c1ec43234bf0a2480967648e82934cb.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-fac9214273718aa7f67ba67f205954c3616b2f56.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-9ef7b0eb5067e11b0a43cd4a47736bce28318e44.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-1e489909c60b47fb05da3e3051fcd158aae0bdd3.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-3a85df4f0f92de06309d443749b4d9fee5ff25c5.jar" />
+    </item>
+    <item
+        jar="/mnt/DATA/installed/Compilers-SDKs/android-studio/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-3d7c3bbd9c2d9af65dc56345c6fdedee30cbeb9f.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-74caff8b6194a92febf4b6821b588f75505f3f8e.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-a56668819a106205d310ce3fc7010c503352ed2a.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-0f820400aeada13143837c34f5f925b606293104.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-be2ed3630e7ba339662056f524afda290c8778da.jar" />
+    </item>
+    <item
+        jar="/home/ahmad/AbsenceChecker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/home/ahmad/AbsenceChecker/app/build/intermediates/pre-dexed/debug/classes-27dd53a8ae34d07a0e2a6c9101e6773eabfdc654.jar" />
+    </item>
+
+</items>
