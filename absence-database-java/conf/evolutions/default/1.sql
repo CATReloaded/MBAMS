@@ -1,9 +1,9 @@
---- First database schema
+#--- First database schema
 
---- !Ups
+#--- !Ups
 
 create table student (
-  id                        bigint not null,
+  id                        bigint not null AUTO_INCREMENT,
   name                      varchar(255),
   mac                       varchar(255) UNIQUE,
   one                       BOOL,
@@ -18,7 +18,7 @@ create table student (
   constraint pk_student primary key (id))
 ;
 
---- !Downs
+#--- !Downs
 
 SET REFERENTIAL_INTEGRITY FALSE;
 
