@@ -152,5 +152,23 @@
     <orderEntry type="library" scope="TEST" name="SBT: org.seleniumhq.selenium:selenium-support:2.39.0:test" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.easytesting:fest-assert:1.4:test" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.easytesting:fest-util:1.1.6:test" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../jackson-core-asl-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../jackson-mapper-asl-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

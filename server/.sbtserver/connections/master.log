@@ -1,7 +1,7 @@
-New log file opened at Thu Apr 30 20:08:16 EEST 2015 by 25601@rashwan
-Taking next connection to: 42613
-New client attempting to connect on port: 40597-42613
-  Address = /127.0.1.1:42613
-This client on port 40597 has uuid 46cc1d47-03e7-4acc-9615-6bc51f320179 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-46cc1d47-03e7-4acc-9615-6bc51f320179
-Taking next connection to: 42613
+New log file opened at Fri May 01 00:44:50 EEST 2015 by 24222@home-laptop
+Taking next connection to: 43874
+New client attempting to connect on port: 44830-43874
+  Address = /127.0.1.1:43874
+This client on port 44830 has uuid 43c6f9df-8d89-411c-844d-720901930860 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-43c6f9df-8d89-411c-844d-720901930860
+Taking next connection to: 43874

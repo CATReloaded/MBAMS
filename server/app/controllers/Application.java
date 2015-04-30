@@ -1,12 +1,16 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.Student;
 import play.data.Form;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.createForm;
 import views.html.editForm;
 import views.html.list;
+import com.fasterxml.jackson.databind.JsonNode;
+import play.mvc.BodyParser;
 
 import static play.data.Form.form;
 
@@ -121,28 +125,59 @@ public class Application extends Controller {
         return GO_HOME;
     }
 
-    public static Result takeAttendance(String mac, String date){
+
+    @BodyParser.Of(BodyParser.Json.class)
+    public static Result takeAttendance(){
+        JsonNode json = request().body().asJson();
+        String mac, date;
+        if(json == null) {
+            return badRequest("Expecting Json data");
+        } else {
+            mac = json.findPath("mac").textValue();
+            date = json.findPath("date").textValue();
+            if (mac == null || date == null) {
+                return badRequest("Missing parameter");
+            }
+        }
+
         Student student = Student.findByMac(mac);
+        ObjectNode result = Json.newObject();
         if(student != null){
             Student.recordAttendance(student,date);
-            flash("success", "Attendance for "+student.name+" has been recorded");
-            return GO_HOME;
+            result.put("name", student.name);
+            result.put("date", date);
+            result.put("status", "success");
         }else {
-            flash("fail", "No Student With this MAC Address");
-            return GO_HOME;
+            result.put("status", "failed");
         }
+        return ok(result);
     }
 
-    public static Result signup(Long student_id,String mac){
+    @BodyParser.Of(BodyParser.Json.class)
+    public static Result signup(){
+        JsonNode json = request().body().asJson();
+        Long student_id;
+        String mac;
+        if(json == null) {
+            return badRequest("Expecting Json data");
+        } else {
+            student_id = json.findPath("id").asLong();
+            mac = json.findPath("mac").textValue();
+            if (student_id == null || mac == null) {
+                return badRequest("Missing parameter");
+            }
+        }
+        ObjectNode result = Json.newObject();
         Student student = Student.findByStudent_id(student_id);
         if(student != null){
             Student.recordMac(student,mac);
-            flash("success", "MAC address for "+student.name+" has been recorded");
-            return GO_HOME;
+            result.put("name", student.name);
+            result.put("id", student_id);
+            result.put("mac", mac);
+            result.put("status", "success");
         }else{
-            flash("fail", "No Student With this id");
-            return GO_HOME;
+            result.put("status", "failed");
         }
+        return ok(result);
     }
-
 }

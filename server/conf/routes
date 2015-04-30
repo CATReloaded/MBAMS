@@ -8,6 +8,9 @@ GET         /                           controllers.Application.index()
 #Students list (look at the default values for pagination parameters)
 GET         /students                   controllers.Application.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
 
+POST        /students/signup            controllers.Application.signup()
+POST        /students/submit            controllers.Application.takeAttendance()
+
 # Add student
 GET         /students/new               controllers.Application.create()
 POST        /students                   controllers.Application.save()
@@ -18,10 +21,6 @@ POST        /students/:id               controllers.Application.update(id:Long)
 
 # Delete a student
 POST        /students/:id/delete        controllers.Application.delete(id:Long)
-
-
-GET         /students/signup/:student_id/:mac    controllers.Application.signup(student_id : Long , mac : String)
-GET         /students/submit/:mac/:date  controllers.Application.takeAttendance(mac : String,date : String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file               controllers.Assets.at(path="/public", file)

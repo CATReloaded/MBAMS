@@ -36,6 +36,8 @@ import java.util.List;
 
 public class MainActivity extends Activity {
     public static String[] data = new String[3];
+    JSONObject studentData = new JSONObject();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,7 +123,6 @@ public class MainActivity extends Activity {
     }
 
     public JSONObject writeJSON(String[] data) {
-        JSONObject studentData = new JSONObject();
         try {
             studentData.put("id", data[0]);
             studentData.put("macAdress", data[1]);
