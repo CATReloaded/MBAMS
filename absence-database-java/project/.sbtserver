@@ -1,3 +1,15 @@
+<<<<<<< HEAD
 #Server Startup at 2015-04-29T13:59+0000
 #Wed Apr 29 16:59:35 EEST 2015
 server.uri=http\://0.0.0.0\:37390
+=======
+<<<<<<< HEAD
+#Server Startup at 2015-04-29T08:59+0000
+#Wed Apr 29 11:59:15 EEST 2015
+server.uri=http\://0.0.0.0\:46565
+=======
+#Server Startup at 2015-04-29T13:59+0000
+#Wed Apr 29 16:59:35 EEST 2015
+server.uri=http\://0.0.0.0\:37390
+>>>>>>> 32789c6ac548908e309b418c712c78d59d2c2288
+>>>>>>> Rashwan-master
