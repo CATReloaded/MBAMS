@@ -9,6 +9,7 @@ dist
 /*.iml
 /out
 /.idea_modules
+/.sbtserver
 .classpath
 .project
 /RUNNING_PID

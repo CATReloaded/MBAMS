@@ -1,24 +1,25 @@
-#--- First database schema
+# --- First database schema
 
-#--- !Ups
+# --- !Ups
 
 create table student (
   id                        bigint not null AUTO_INCREMENT,
+  student_id           bigint ,
   name                      varchar(255),
-  mac                       varchar(255) UNIQUE,
-  one                       BOOL,
-  two                       BOOL,
-  three                     BOOL,
-  four                      BOOL,
-  five                      BOOL,
-  six                       BOOL,
-  seven                     BOOL,
-  eight                     BOOL,
+  mac                       varchar(255),
+  one                       varchar(255) DEFAULT 'absent',
+  two                       varchar(255) DEFAULT 'absent',
+  three                     varchar(255) DEFAULT 'absent',
+  four                      varchar(255) DEFAULT 'absent',
+  five                      varchar(255) DEFAULT 'absent',
+  six                       varchar(255) DEFAULT 'absent',
+  seven                     varchar(255) DEFAULT 'absent',
+  eight                     varchar(255) DEFAULT 'absent',
 
   constraint pk_student primary key (id))
 ;
 
-#--- !Downs
+# --- !Downs
 
 SET REFERENTIAL_INTEGRITY FALSE;
 
