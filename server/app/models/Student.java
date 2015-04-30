@@ -69,6 +69,24 @@ public class Student extends Model {
         }
     }
 
+    public static Student findByStudent_id(long student_id){
+        List<Student> list = find.where().eq("student_id",student_id).findList();
+        if (list.size()!=0){
+            return list.get(0);
+        }else {
+            return null;
+        }
+    }
+
+    public void setMac(String mac) {
+        this.mac = mac;
+    }
+
+    public static void recordMac(Student student,String mac){
+        student.setMac(mac);
+        student.save();
+    }
+
     public static void recordAttendance(Student student,String date){
         String [] fields = {student.one,student.two,student.three,student.four,student.five,student.six,student.seven,student.eight};
         for(int i = 0;i < fields.length;i++){

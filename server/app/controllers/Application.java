@@ -121,7 +121,7 @@ public class Application extends Controller {
         return GO_HOME;
     }
 
-    public static Result takeAttendace(String mac,String date){
+    public static Result takeAttendance(String mac, String date){
         Student student = Student.findByMac(mac);
         if(student != null){
             Student.recordAttendance(student,date);
@@ -129,6 +129,18 @@ public class Application extends Controller {
             return GO_HOME;
         }else {
             flash("fail", "No Student With this MAC Address");
+            return GO_HOME;
+        }
+    }
+
+    public static Result signup(Long student_id,String mac){
+        Student student = Student.findByStudent_id(student_id);
+        if(student != null){
+            Student.recordMac(student,mac);
+            flash("success", "MAC address for "+student.name+" has been recorded");
+            return GO_HOME;
+        }else{
+            flash("fail", "No Student With this id");
             return GO_HOME;
         }
     }
