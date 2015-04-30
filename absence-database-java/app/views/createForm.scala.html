@@ -11,7 +11,8 @@
     @form(routes.Application.save()) {
         
         <fieldset>
-        
+
+            @inputText(studentForm("student_id"), '_label -> "Student ID", '_help -> "")
             @inputText(studentForm("name"), '_label -> "Student name", '_help -> "")
             @inputText(studentForm("mac"), '_label -> "MAC Address", '_help -> "")
             @inputText(studentForm("one"), '_label -> "Lecture #1", '_help -> "")
