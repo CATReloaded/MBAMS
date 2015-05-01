@@ -5,3 +5,6 @@ New client attempting to connect on port: 41506-42878
 This client on port 41506 has uuid 55fb3c5d-38fb-4c83-8872-6cd1af19d4c5 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: play-fork-run-55fb3c5d-38fb-4c83-8872-6cd1af19d4c5
 Taking next connection to: 42878
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42878

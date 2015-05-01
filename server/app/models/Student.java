@@ -89,8 +89,8 @@ public class Student extends Model {
 
     public static void recordAttendance(Student student,String date,int lectureNo){
         String [] fields = {student.one,student.two,student.three,student.four,student.five,student.six,student.seven,student.eight};
-        if(lectureNo != 0){
-            student.setAll(date,student,lectureNo);
+        if(lectureNo != 0 && lectureNo <= fields.length){
+            student.setAll(date,student,lectureNo-1);
         }else {
             for (int i = 0; i < fields.length; i++) {
                 if (fields[i].equals("absent")) {
