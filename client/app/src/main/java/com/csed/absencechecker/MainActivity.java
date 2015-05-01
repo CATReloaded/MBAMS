@@ -1,42 +1,40 @@
 package com.csed.absencechecker;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.SharedPreferences;
-import android.net.wifi.WifiConfiguration;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.StrictMode;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.zip.GZIPInputStream;
 
 public class MainActivity extends Activity {
-    public static String[] data = new String[3];
+    public static final String DATA_PREFF = "dataPreff";
+    public static String[] data = new String[2];
     JSONObject studentData = new JSONObject();
+    private UserLoginTask mAuthTask;
 
 
     @Override
@@ -44,93 +42,59 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        connectToWifi("ICODER", "passwordXD");
+        data = retrieveData();
 
-        String macAdress = getMacAddress();
+        JSONObject ob = createJSON(data);
 
-        data = retrieveData(macAdress);
-
-        JSONObject ob = writeJSON(data);
-
-        // new Submit(MainActivity.this).execute(data);
-
-        submit(data);
-
-    }
-
-    private void submit(String[] data) {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-                .permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-
-        HttpClient httpclient = new DefaultHttpClient();
-        HttpGet httpget = new HttpGet("http://192.168.1.222:9000/students/submit/"
-        + MainActivity.data[1] + "/" + MainActivity.data[2]);
-        Toast.makeText(MainActivity.this, "http://192.168.1.222:9000/students/submit/"
-                + MainActivity.data[1] + "/" + MainActivity.data[2], Toast.LENGTH_LONG).show();
         try {
-            HttpResponse response = httpclient.execute(httpget);
-        } catch (IOException e) {
+            mAuthTask = new UserLoginTask(ob);
+        } catch (JSONException e) {
             e.printStackTrace();
         }
+        mAuthTask.execute((Void) null);
+
+        // submit();
+
     }
 
-    private String getMacAddress() {
-        WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-        WifiInfo info = wifiManager.getConnectionInfo();
-        String address = info.getMacAddress();
-        return address;
-    }
+//    private void submit() {
+//        mAuthTask = new UserLoginTask(, pwd);
+//        mAuthTask.execute((Void) null);
+//
+//    }
 
-    private String[] retrieveData(String macAdress) {
-        SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-        String retrievedData = prefs.getString(LoginActivity.DATA_PREFF, null);
-        String id = null;
-        if (retrievedData != null) {
-            id = prefs.getString("id", "NONE");
-        }
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = new Date();
-        String strDate = dateFormat.format(date);
+    private String[] retrieveData() {
+        String macAddress = getMacAddress();
+        String strDate = getDate();
 
-        data[0] = id;
-        data[1] = macAdress;
-        data[2] = strDate;
-        Toast.makeText(MainActivity.this, data[0], Toast.LENGTH_LONG).show();
-        Toast.makeText(MainActivity.this, data[1], Toast.LENGTH_LONG).show();
-        Toast.makeText(MainActivity.this, data[2], Toast.LENGTH_LONG).show();
+        data[0] = macAddress;
+        data[1] = strDate;
 
         return data;
     }
 
-    private void connectToWifi(String SSID, String password) {
-        WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-        // setup a wifi configuration
-        WifiConfiguration wc = new WifiConfiguration();
-        wc.SSID = " \" " + SSID + " \" ";
-        wc.preSharedKey = " \" " + password + " \" ";
-        wc.status = WifiConfiguration.Status.ENABLED;
-        wc.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
-        wc.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP);
-        wc.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
-        wc.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.TKIP);
-        wc.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.CCMP);
-        wc.allowedProtocols.set(WifiConfiguration.Protocol.RSN);
-        // connect and enable the connection
-        int netId = wifiManager.addNetwork(wc);
-        wifiManager.enableNetwork(netId, true);
-        wifiManager.setWifiEnabled(true);
+    private String getDate() {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 
-    public JSONObject writeJSON(String[] data) {
+    private String getMacAddress() {
+        SharedPreferences prefs = getSharedPreferences(DATA_PREFF, MODE_PRIVATE);
+        String macAddress;
+
+        macAddress = prefs.getString("mac", "FAILED");
+        return macAddress;
+    }
+
+    public JSONObject createJSON(String[] data) {
         try {
-            studentData.put("id", data[0]);
-            studentData.put("macAdress", data[1]);
-            studentData.put("date", data[2]);
+            studentData.put("macAddress", data[0]);
+            studentData.put("date", data[1]);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        System.out.println(studentData);
         return studentData;
     }
 
@@ -154,25 +118,88 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+
+    /**
+     * Represents an asynchronous login/registration task used to authenticate
+     * the user.
+     */
+
+    public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
+
+        private String macAddress;
+        private String date;
+
+        UserLoginTask(JSONObject stData) throws JSONException {
+                date = stData.getString("date");
+                macAddress = stData.getString("macAddress");
+            }
+
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            Log.i("doInBackground", "doInBackground");
+
+            try {
+                String[] stData = retrieveData();
+                JSONObject jsData = createJSON(stData);
+                Log.i("TRY", jsData.toString());
+
+                HttpClient httpclient = new DefaultHttpClient();
+                HttpPost httppostreq = new HttpPost("http://192.168.1.222:9000/students/submit");
+                StringEntity se = new StringEntity(jsData.toString());
+                Log.i("SE", se.toString());
+
+                se.setContentType("application/json;charset=UTF-8");
+                se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json;charset=UTF-8"));
+                httppostreq.setEntity(se);
+                // Execute HTTP Post Request
+                HttpResponse response = httpclient.execute(httppostreq);
+                HttpEntity resultentity = response.getEntity();
+                Log.i("RE", resultentity.toString());
+
+                if (resultentity != null) {
+                    InputStream inputstream = resultentity.getContent();
+                    Header contentencoding = response.getFirstHeader("Content-Encoding");
+                    if (contentencoding != null && contentencoding.getValue().equalsIgnoreCase("gzip")) {
+                        inputstream = new GZIPInputStream(inputstream);
+                    }
+                    String resultstring = convertStreamToString(inputstream);
+                    inputstream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            return true;
+        }
+
+        private String convertStreamToString(InputStream is) {
+            String line = "";
+            StringBuilder total = new StringBuilder();
+            BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+            try {
+                while ((line = rd.readLine()) != null) {
+                    total.append(line);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return total.toString();
+        }
+
+        @Override
+        protected void onPostExecute(final Boolean success) {
+        }
+
+        @Override
+        protected void onCancelled() {
+        }
+
+    }
 }
-//class Submit extends AsyncTask<String [], Void, Void> {
-//    private Context mContext;
-//    public Submit (Context context){
-//        mContext = context;
-//    }
-//    @Override
-//    protected Void doInBackground(String[]... params) {
-//        HttpClient httpclient = new DefaultHttpClient();
-//        HttpPost httppost = new HttpPost("http://192.168.1.222:9000/students/submit/"
-//                + MainActivity.data[1] + "/" + MainActivity.data[2]);
-//        Toast.makeText(mContext, "http://192.168.1.222:9000/students/submit/"
-//                + MainActivity.data[1] + "/" + MainActivity.data[2], Toast.LENGTH_LONG).show();
-//
-//        try {
-//            HttpResponse response = httpclient.execute(httppost);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
-//}
