@@ -91,13 +91,11 @@ public class MainActivity extends Activity {
         try {
             studentData.put("macAddress", data[0]);
             studentData.put("date", data[1]);
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return studentData;
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -142,12 +140,11 @@ public class MainActivity extends Activity {
             try {
                 String[] stData = retrieveData();
                 JSONObject jsData = createJSON(stData);
-                Log.i("TRY", jsData.toString());
 
                 HttpClient httpclient = new DefaultHttpClient();
                 HttpPost httppostreq = new HttpPost("http://192.168.1.222:9000/students/submit");
                 StringEntity se = new StringEntity(jsData.toString());
-                Log.i("SE", se.toString());
+                Log.i("VSV",jsData.toString());
 
                 se.setContentType("application/json;charset=UTF-8");
                 se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json;charset=UTF-8"));
@@ -164,6 +161,7 @@ public class MainActivity extends Activity {
                         inputstream = new GZIPInputStream(inputstream);
                     }
                     String resultstring = convertStreamToString(inputstream);
+                    Log.i("RESULT",resultstring);
                     inputstream.close();
                 }
             } catch (IOException e) {

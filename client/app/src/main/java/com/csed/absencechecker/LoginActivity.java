@@ -326,13 +326,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                 try {
                     // adding keys
                     jsonobj.put("id", id);
-                    jsonobj.put("mac", macAddress);
-
-                    // Display the contents of the JSON objects
-                    Log.i("TST", jsonobj.toString(2));
+                    jsonobj.put("macAddress", macAddress);
                 } catch (JSONException ex) {
-                    Log.i("TST", "CATCH");
-
                     ex.printStackTrace();
                 }
 

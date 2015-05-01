@@ -129,18 +129,18 @@ public class Application extends Controller {
     @BodyParser.Of(BodyParser.Json.class)
     public static Result takeAttendance(){
         JsonNode json = request().body().asJson();
-        String mac, date;
+        String macAddress, date;
         if(json == null) {
             return badRequest("Expecting Json data");
         } else {
-            mac = json.findPath("mac").textValue();
+            macAddress = json.findPath("macAddress").textValue();
             date = json.findPath("date").textValue();
-            if (mac == null || date == null) {
+            if (macAddress == null || date == null) {
                 return badRequest("Missing parameter");
             }
         }
 
-        Student student = Student.findByMac(mac);
+        Student student = Student.findByMac(macAddress);
         ObjectNode result = Json.newObject();
         if(student != null){
             Student.recordAttendance(student,date);
@@ -157,23 +157,23 @@ public class Application extends Controller {
     public static Result signup(){
         JsonNode json = request().body().asJson();
         Long student_id;
-        String mac;
+        String macAddress;
         if(json == null) {
             return badRequest("Expecting Json data");
         } else {
             student_id = json.findPath("id").asLong();
-            mac = json.findPath("mac").textValue();
-            if (student_id == null || mac == null) {
+            macAddress = json.findPath("macAddress").textValue();
+            if (student_id == null || macAddress == null) {
                 return badRequest("Missing parameter");
             }
         }
         ObjectNode result = Json.newObject();
         Student student = Student.findByStudent_id(student_id);
         if(student != null){
-            Student.recordMac(student,mac);
+            Student.recordMac(student,macAddress);
             result.put("name", student.name);
             result.put("id", student_id);
-            result.put("mac", mac);
+            result.put("macAddress", macAddress);
             result.put("status", "success");
         }else{
             result.put("status", "failed");
