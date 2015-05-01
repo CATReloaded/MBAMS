@@ -6,7 +6,7 @@
 GET         /                           controllers.Application.index()
 
 #Students list (look at the default values for pagination parameters)
-GET         /students                   controllers.Application.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
+GET         /students                   controllers.Application.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "",lecture:Int ?= 0)
 
 POST        /students/signup            controllers.Application.signup()
 POST        /students/submit            controllers.Application.takeAttendance()

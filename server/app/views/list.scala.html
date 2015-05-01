@@ -1,4 +1,5 @@
-@(currentPage: com.avaje.ebean.Page[Student], currentSortBy: String, currentOrder: String, currentFilter: String)
+@(currentPage: com.avaje.ebean.Page[Student], currentSortBy: String, currentOrder: String, currentFilter: String,lectureNo: Int)
+
 
 @****************************************
 * Helper generating navigation links    *
@@ -22,8 +23,11 @@
     }
     
     // Generate the link
-    routes.Application.list(newPage, sortBy, order, currentFilter)
+    routes.Application.list(newPage, sortBy, order, currentFilter,lectureNo)
     
+}
+@setLecNo() = @{
+    routes.Application.list(0,"name","asc","",lectureNo)
 }
 
 @**********************************
@@ -55,10 +59,17 @@
             <input type="search" id="searchbox" name="f" value="@currentFilter" placeholder="Filter by student name...">
             <input type="submit" id="searchsubmit" value="Filter by name" class="btn primary">
         </form>
+
+        <form action="@setLecNo()" method="GET">
+            <input type="number" id="lecNo" name="lecture" value="@lectureNo" placeholder="Enter the lecture no ...">
+            <input type="submit" id="submitNo" value="Submit Lecture No" class="btn primary">
+        </form>
         
         <a class="btn success" id="add" href="@routes.Application.create()">Add a new student</a>
         
     </div>
+
+
     
     @if(currentPage.getTotalRowCount == 0) {
         

@@ -87,13 +87,17 @@ public class Student extends Model {
         student.save();
     }
 
-    public static void recordAttendance(Student student,String date){
+    public static void recordAttendance(Student student,String date,int lectureNo){
         String [] fields = {student.one,student.two,student.three,student.four,student.five,student.six,student.seven,student.eight};
-        for(int i = 0;i < fields.length;i++){
-            if(fields[i].equals("absent")){
-                student.setAll(date,student,i);
-                student.save();
-                break;
+        if(lectureNo != 0){
+            student.setAll(date,student,lectureNo);
+        }else {
+            for (int i = 0; i < fields.length; i++) {
+                if (fields[i].equals("absent")) {
+                    student.setAll(date, student, i);
+                    student.save();
+                    break;
+                }
             }
         }
 
