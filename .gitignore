@@ -1,3 +1,12 @@
+server/.idea
+server/.idea_modules
+server/.settings
+server/.sbtserver
+server/logs
+server/*.iml
+server/logs
+server/target
+server/projectFilesBackup
 logs
 project/project
 project/target
