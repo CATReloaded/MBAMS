@@ -2,8 +2,8 @@
 <resources>
 
     <string name="app_name">Absence Checker</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">Absence Checker</string>
+    <string name="status">Status</string>
     <string name="action_settings">Settings</string>
 
 </resources>

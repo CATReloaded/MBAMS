@@ -25,6 +25,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
 
 public class MainActivity extends Activity {
     public static final String DATA_PREFF = "dataPreff";
@@ -108,7 +109,6 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-
     /**
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
@@ -120,6 +120,7 @@ public class MainActivity extends Activity {
         private String macAddress;
         private String date;
         private String resultstring;
+        private Map<String, Object> results;
 
         UserLoginTask(JSONObject stData) throws JSONException {
             date = stData.getString("date");
@@ -132,7 +133,7 @@ public class MainActivity extends Activity {
             try {
 
                 JSONObject jsData = getJsonObject();
-
+                parseJSON(jsData);
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(SUBMIT_URL);
                 StringEntity se = new StringEntity(jsData.toString());
@@ -145,9 +146,14 @@ public class MainActivity extends Activity {
                 HttpResponse response = httpClient.execute(httpPost);
                 HttpEntity responseEntity = response.getEntity();
 
-                resultstring = getStatus(responseEntity);
+                String retSrc = EntityUtils.toString(responseEntity);
+                JSONObject result = new JSONObject(retSrc); //Convert String to JSON Object
+
+                results = parseJSON(result);
 
             } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
 
@@ -165,38 +171,37 @@ public class MainActivity extends Activity {
             return createJSON(stData);
         }
 
-        private String getStatus(HttpEntity entity) {
-            String status = null;
+        private Map<String, Object> parseJSON(JSONObject jsonObject) {
+            Map<String, Object> map = null;
             try {
-                if (entity != null) {
-                    String retSrc = EntityUtils.toString(entity);
-
-                    // parsing JSON
-                    JSONObject result = new JSONObject(retSrc);
-
-                    status = result.getString("status");
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+                map = JSONHelper.toMap(jsonObject);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            return status;
+            return map;
         }
 
         @Override
         protected void onPostExecute(final Boolean success) {
             TextView statusView = (TextView) findViewById(R.id.statusTextView);
-            String status = setStatus(resultstring);
+            String status = setStatus(results.get("status").toString());
             statusView.setText(status);
+            String res = "Your name: " + results.get("name").toString();
+            res += "\n" +"Lecture number: " + results.get("lecture#").toString();
+            TextView resView = (TextView) findViewById(R.id.dataView);
+            resView.setText(res);
         }
 
-        private String setStatus(String resultString){
+        private String setStatus(String resultString) {
             String message;
-            if (resultString.equals("success")){
-                message = "You have successfully registered your attendance !";
-            }else{
-                message = "Something went wrong, please contact your professor.";
+            if (resultString != null) {
+                if (resultString.equals("success")) {
+                    message = "You have successfully registered your attendance !";
+                } else {
+                    message = "We can't identify you! Please contact your professor.";
+                }
+            } else {
+                message = "Something went wrong, make sure you are connect to the same local network with your professor!";
             }
             return message;
         }

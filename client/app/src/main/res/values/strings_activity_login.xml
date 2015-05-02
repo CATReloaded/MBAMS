@@ -3,11 +3,14 @@
     <!-- Strings related to login -->
     <string name="prompt_name">Name</string>
     <string name="prompt_s_id">ID</string>
-    <string name="action_sign_in">Save</string>
-    <string name="action_sign_in_short">Save</string>
+    <string name="action_sign_in">Sign up</string>
+    <string name="action_sign_in_short">Sign up</string>
 
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_password">This id is incorrect</string>
+    <string name="error_incorrect_id">This id is incorrect</string>
     <string name="error_field_required">This field is required</string>
+    <string name="success_signup">"You have successfully sign up in the system !"</string>
+    <string name="failed_signup">"We can't identify you! Please check your ID again."</string>
+    <string name="network_error">"Something went wrong, make sure you are connect to the same local network with your professor"</string>
+
 </resources>

@@ -6,161 +6,161 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-adfd2b13be53125460c6e2ee1e54b48e58e3fccd.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-adfd2b13be53125460c6e2ee1e54b48e58e3fccd.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-4d92755ee044cd1ab6a5e1a0427ffaa2606975fe.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-4d92755ee044cd1ab6a5e1a0427ffaa2606975fe.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-d119101c69b243249ea2cd62e3d432b2551d8023.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-d119101c69b243249ea2cd62e3d432b2551d8023.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-fd7e29506b6193f1050375fac076dc1f57107400.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-fd7e29506b6193f1050375fac076dc1f57107400.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-f697bb6ed82adf2d9816f9730881b76493e02bf5.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-f697bb6ed82adf2d9816f9730881b76493e02bf5.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-162dcf3f97eded0a7eb4e3c54ade097e6fb30723.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-162dcf3f97eded0a7eb4e3c54ade097e6fb30723.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-fca1270ba17eb47b325b7369693c3ba637777522.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-fca1270ba17eb47b325b7369693c3ba637777522.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-0ba8ea9c0d1113377dee9132f6a55d3e5d113a53.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-0ba8ea9c0d1113377dee9132f6a55d3e5d113a53.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-420e27b7fbd467179e4eb0a15650c610a55832d9.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-420e27b7fbd467179e4eb0a15650c610a55832d9.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-7ec2a80245850161db539f293e7bbd438573b6cb.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-7ec2a80245850161db539f293e7bbd438573b6cb.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-fbea4569038b7f609f058bfc59c5bfca8a9ca11b.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-fbea4569038b7f609f058bfc59c5bfca8a9ca11b.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-ffe0cfd3fd0c548a60e88e94fcd220dc1876fa0e.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-ffe0cfd3fd0c548a60e88e94fcd220dc1876fa0e.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-e765beb8510b20e8e240334243b7290ac03f9eaf.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-e765beb8510b20e8e240334243b7290ac03f9eaf.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-c478f68ebe87ede4d4d56ab979c2ef65b0032285.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-c478f68ebe87ede4d4d56ab979c2ef65b0032285.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-a90da71359e4011a623f7f63011b4e52f26dfd55.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-a90da71359e4011a623f7f63011b4e52f26dfd55.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-4be9d5430cd66b2ce2815e5fd7bc57ad81ce64e6.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-4be9d5430cd66b2ce2815e5fd7bc57ad81ce64e6.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-e2f176b32d9a38e8f95d88672eb31169365e0a19.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-e2f176b32d9a38e8f95d88672eb31169365e0a19.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-0203937b7be71f64f4fa2b8a78be8342284e6ba0.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-0203937b7be71f64f4fa2b8a78be8342284e6ba0.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-519e70443705331004cc831ab3df03ccb75b54f5.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-519e70443705331004cc831ab3df03ccb75b54f5.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-f7435aa213b064c6ca2bf77a97f1a772f4b34da6.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-f7435aa213b064c6ca2bf77a97f1a772f4b34da6.jar" />
     </item>
     <item
         jar="/mnt/DATA/installed/Compilers-SDKs/android-studio/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/support-annotations-22.0.0-3d7c3bbd9c2d9af65dc56345c6fdedee30cbeb9f.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-3d7c3bbd9c2d9af65dc56345c6fdedee30cbeb9f.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/classes-eb425109b2e1fe9b47426701ac5c647f7694d32a.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/classes-eb425109b2e1fe9b47426701ac5c647f7694d32a.jar" />
     </item>
     <item
         jar="/home/ahmad/absence-database-java/client/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/release/internal_impl-22.0.0-c730ad8494ba97ded0339b879f91234914e96bf4.jar" />
+        <dex dex="/home/ahmad/absence-database-java/client/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c730ad8494ba97ded0339b879f91234914e96bf4.jar" />
     </item>
 
 </items>
