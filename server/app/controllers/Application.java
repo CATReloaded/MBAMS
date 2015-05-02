@@ -18,12 +18,13 @@ import static play.data.Form.form;
  * Manage a database of Students
  */
 public class Application extends Controller {
-    
+
+    public static int lectureNo ;
     /**
      * This result directly redirect to application home.
      */
     public static Result GO_HOME = redirect(
-        controllers.routes.Application.list(0, "name", "asc", "")
+        controllers.routes.Application.list(0, "name", "asc", "",0)
     );
     
     /**
@@ -41,11 +42,12 @@ public class Application extends Controller {
      * @param order Sort order (either asc or desc)
      * @param filter Filter applied on students names
      */
-    public static Result list(int page, String sortBy, String order, String filter) {
+    public static Result list(int page, String sortBy, String order, String filter, int lectureNo) {
+        Application.lectureNo = lectureNo;
         return ok(
             list.render(
                 Student.page(page, 20, sortBy, order, filter),
-                sortBy, order, filter
+                sortBy, order, filter,lectureNo
             )
         );
     }
@@ -80,17 +82,6 @@ public class Application extends Controller {
     }
 
 
-    /**
-     * Handle the 'Absence check via Android App' submission
-     *
-     * @param mac Mac Address of the student to edit
-     */
-    public static Result updateViaAndroidApp(String mac, boolean absence) {
-        Form<Student> studentForm = form(Student.class).bindFromRequest();
-        studentForm.get().update(mac);
-        flash("success", "Student " + studentForm.get().name + " has been updated");
-        return GO_HOME;
-    }
 
     
     /**
@@ -143,7 +134,7 @@ public class Application extends Controller {
         Student student = Student.findByMac(macAddress);
         ObjectNode result = Json.newObject();
         if(student != null){
-            Student.recordAttendance(student,date);
+            Student.recordAttendance(student,date,Application.lectureNo);
             result.put("name", student.name);
             result.put("date", date);
             result.put("status", "success");
@@ -180,4 +171,6 @@ public class Application extends Controller {
         }
         return ok(result);
     }
+
+
 }
