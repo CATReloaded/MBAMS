@@ -4,11 +4,15 @@
 
 # Default path will just redirect to the computer list
 GET         /                           controllers.Application.index()
+#POST        /upload                     controllers.Application.upload()
 
 #Students list (look at the default values for pagination parameters)
 GET         /students                   controllers.Application.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "",lecture:Int ?= 0)
 
+#Student Signup for the first time
 POST        /students/signup            controllers.Application.signup()
+
+#Record attendance for a student
 POST        /students/submit            controllers.Application.takeAttendance()
 
 # Add student

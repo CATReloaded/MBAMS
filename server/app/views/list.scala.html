@@ -66,6 +66,16 @@
         </form>
         
         <a class="btn success" id="add" href="@routes.Application.create()">Add a new student</a>
+
+        @*@helper.form(action = routes.Application.upload, 'enctype -> "multipart/form-data") {*@
+
+            @*<input type="file" name="picture">*@
+
+            @*<p>*@
+                @*<input type="submit">*@
+            @*</p>*@
+
+        @*}*@
         
     </div>
 
@@ -82,7 +92,7 @@
         <table class="students zebra-striped">
             <thead>
                 <tr>
-                    @header("student_id","Student ID");
+                    @header("student_id","Student ID")
                     @header("name", "Student name")
                     @header("mac", "MAC Address")
                     @header("one", "#1")

@@ -4,7 +4,7 @@
 
 create table student (
   id                        bigint not null AUTO_INCREMENT,
-  student_id           bigint ,
+  student_id                bigint ,
   name                      varchar(255),
   mac                       varchar(255),
   one                       varchar(255) DEFAULT '-',
