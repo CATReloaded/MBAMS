@@ -1,5 +1,5 @@
-New log file opened at Sat May 02 04:13:58 EEST 2015 by 29248@home-laptop
-jvm 29248@home-laptop
+New log file opened at Sat May 02 04:51:27 EEST 2015 by 31913@home-laptop
+jvm 31913@home-laptop
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/ahmad/absence-database-java/server/project, returning: (server-build)
 Loading project definition from /home/ahmad/absence-database-java/server/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@21c03513, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3594b8de, check cycles: false
 
 Initial source changes: 
 	removed:Set()

@@ -7,14 +7,14 @@ create table student (
   student_id           bigint ,
   name                      varchar(255),
   mac                       varchar(255),
-  one                       varchar(255) DEFAULT 'absent',
-  two                       varchar(255) DEFAULT 'absent',
-  three                     varchar(255) DEFAULT 'absent',
-  four                      varchar(255) DEFAULT 'absent',
-  five                      varchar(255) DEFAULT 'absent',
-  six                       varchar(255) DEFAULT 'absent',
-  seven                     varchar(255) DEFAULT 'absent',
-  eight                     varchar(255) DEFAULT 'absent',
+  one                       varchar(255) DEFAULT '-',
+  two                       varchar(255) DEFAULT '-',
+  three                     varchar(255) DEFAULT '-',
+  four                      varchar(255) DEFAULT '-',
+  five                      varchar(255) DEFAULT '-',
+  six                       varchar(255) DEFAULT '-',
+  seven                     varchar(255) DEFAULT '-',
+  eight                     varchar(255) DEFAULT '-',
 
   constraint pk_student primary key (id))
 ;

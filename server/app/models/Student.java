@@ -94,7 +94,7 @@ public class Student extends Model {
             student.save();
         }else {
             for (int i = 0; i < fields.length; i++) {
-                if (fields[i].equals("absent")) {
+                if (fields[i].equals("-")) {
                     student.setAll(date, student, i);
                     student.save();
                     break;

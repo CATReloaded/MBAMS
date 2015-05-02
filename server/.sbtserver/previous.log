@@ -1,5 +1,5 @@
-New log file opened at Sat May 02 04:10:48 EEST 2015 by 28890@home-laptop
-jvm 28890@home-laptop
+New log file opened at Sat May 02 04:48:14 EEST 2015 by 31557@home-laptop
+jvm 31557@home-laptop
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/ahmad/absence-database-java/server/project, returning: (server-build)
 Loading project definition from /home/ahmad/absence-database-java/server/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@77bd895e, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4fe751e9, check cycles: false
 [info] Updating {file:/home/ahmad/absence-database-java/server/project/}server-build...
 Updating {file:/home/ahmad/absence-database-java/server/project/}server-build...
 Other repositories:
@@ -16339,7 +16339,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 6565ms :: artifacts dl 118ms
+:: resolution report :: resolve 6555ms :: artifacts dl 106ms
 	report for default#server-build;0.1-SNAPSHOT compile produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-compile.xml
 	report for default#server-build;0.1-SNAPSHOT runtime produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-runtime.xml
 	report for default#server-build;0.1-SNAPSHOT test produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-test.xml
@@ -16353,7 +16353,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#server-build;0.1-SNAPSHOT docs produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-docs.xml
 	report for default#server-build;0.1-SNAPSHOT pom produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-pom.xml
 	report for default#server-build;0.1-SNAPSHOT scala-tool produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-scala-tool.xml
-	resolve done (6565ms resolve - 118ms download)
+	resolve done (6555ms resolve - 106ms download)
 [info] Done updating.
 Done updating.
 
@@ -16395,7 +16395,7 @@ Set current project to computer-database-java (in build file:/home/ahmad/absence
 > server-handle-next-server-request
 > {file:/home/ahmad/absence-database-java/server/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@3a968aae, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@728da71d, check cycles: false
 Read from stdout: Updating {file:/home/ahmad/absence-database-java/server/}root...
 Updating {file:/home/ahmad/absence-database-java/server/}root...
 Other repositories:
@@ -16410,7 +16410,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.4 ...
 Resolving org.scala-lang#scala-library;2.11.4 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@798d8f9e
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a86e3bd
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.4
 	found org.scala-lang#scala-library;2.11.4 in sbt-chain
 	[2.11.4] org.scala-lang#scala-library;2.11.4
@@ -23460,7 +23460,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2493ms :: artifacts dl 78ms
+:: resolution report :: resolve 2500ms :: artifacts dl 56ms
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT compile produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-compile.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT runtime produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-runtime.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT test produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-test.xml
@@ -23475,7 +23475,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT pom produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-pom.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT scala-tool produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-scala-tool.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT fork-run produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-fork-run.xml
-	resolve done (2493ms resolve - 78ms download)
+	resolve done (2500ms resolve - 56ms download)
 Read from stdout: Done updating.
 Done updating.
 Read from stdout: There may be incompatibilities among your library dependencies.
@@ -23486,40 +23486,57 @@ Read from stdout: 	* org.webjars:jquery:1.11.1 -> 2.1.1
 	* org.webjars:jquery:1.11.1 -> 2.1.1
 Read from stdout: Run 'evicted' to see detailed eviction warnings
 Run 'evicted' to see detailed eviction warnings
-Total time: 3 s, completed May 2, 2015 4:11:11 AM
+Total time: 3 s, completed May 2, 2015 4:48:35 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@2b9bbaf9, check cycles: false
-Total time: 0 s, completed May 2, 2015 4:11:11 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@24e9fec1, check cycles: false
+Total time: 0 s, completed May 2, 2015 4:48:35 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/ahmad/absence-database-java/server/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@503554f4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@571ef26e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/home/ahmad/absence-database-java/server/app/models/Student.java)
+	modified: Set(/home/ahmad/absence-database-java/server/app/models/Student.java, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/ahmad/absence-database-java/server/app/models/Student.java)
+Initial directly invalidated sources: Set(/home/ahmad/absence-database-java/server/app/models/Student.java, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/home/ahmad/absence-database-java/server/app/models/Student.java)
+All initially invalidated sources: Set(/home/ahmad/absence-database-java/server/app/models/Student.java, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala)
 
-Read from stdout: Compiling 1 Java source to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
-Compiling 1 Java source to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@ecc9cfb directly...
-Java compilation took 0.979369014 s
-Java analysis took 0.158469585 s
-Java compile + analysis took 1.145386638 s
+Read from stdout: Compiling 1 Scala source and 1 Java source to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.4
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.4
+Other repositories:
+Default repositories:
+Running cached compiler 52082d3d, interfacing (CompilerInterface) with Scala compiler version 2.11.4
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/ahmad/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar
+	-classpath
+	/home/ahmad/absence-database-java/server/target/scala-2.11/classes:/home/ahmad/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/ahmad/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/ahmad/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/ahmad/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/ahmad/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/ahmad/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/ahmad/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/ahmad/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/ahmad/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/ahmad/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/ahmad/.ivy2/cache/io.netty/netty/bundles/netty-3.9.3.Final.jar:/home/ahmad/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/ahmad/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/ahmad/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/ahmad/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/ahmad/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/ahmad/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/ahmad/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/ahmad/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/ahmad/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/ahmad/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/ahmad/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/ahmad/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/ahmad/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/ahmad/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/ahmad/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/ahmad/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/ahmad/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/ahmad/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/ahmad/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/ahmad/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/ahmad/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/ahmad/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/ahmad/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/ahmad/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/ahmad/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/home/ahmad/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/home/ahmad/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/home/ahmad/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/ahmad/.ivy2/cache/org.webjars/jquery/jars/jquery-2.1.1.jar:/home/ahmad/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.1.jar:/home/ahmad/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Scala compilation took 4.512210547 s
+Attempting to call com.sun.tools.javac.api.JavacTool@56905c68 directly...
+Java compilation took 1.000633769 s
+Java analysis took 0.399498503 s
+Java compile + analysis took 1.416920148 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -23534,7 +23551,37 @@ Copy resource mappings:
 	(/home/ahmad/absence-database-java/server/conf/evolutions/default,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default)
 	(/home/ahmad/absence-database-java/server/conf/evolutions/default/1.sql,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default/1.sql)
 	(/home/ahmad/absence-database-java/server/conf/evolutions/default/2.sql,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default/2.sql)
-Total time: 2 s, completed May 2, 2015 4:11:15 AM
+Total time: 8 s, completed May 2, 2015 4:48:51 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/ahmad/absence-database-java/server/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@231709f0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/ahmad/absence-database-java/server/conf/evolutions,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions)
+	(/home/ahmad/absence-database-java/server/conf/routes,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/routes)
+	(/home/ahmad/absence-database-java/server/conf/messages,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/messages)
+	(/home/ahmad/absence-database-java/server/conf/application.conf,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/application.conf)
+	(/home/ahmad/absence-database-java/server/conf/evolutions/default,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default)
+	(/home/ahmad/absence-database-java/server/conf/evolutions/default/1.sql,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default/1.sql)
+	(/home/ahmad/absence-database-java/server/conf/evolutions/default/2.sql,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default/2.sql)
+Total time: 0 s, completed May 2, 2015 4:49:00 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -23543,4 +23590,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 28890@home-laptop logs at Sat May 02 04:13:52 EEST 2015, goodbye.
+Closing the 31557@home-laptop logs at Sat May 02 04:51:17 EEST 2015, goodbye.
