@@ -137,6 +137,7 @@ public class Application extends Controller {
             Student.recordAttendance(student,date,Application.lectureNo);
             result.put("name", student.name);
             result.put("date", date);
+            result.put("lecture#", Application.lectureNo);
             result.put("status", "success");
         }else {
             result.put("status", "failed");

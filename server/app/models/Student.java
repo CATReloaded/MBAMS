@@ -91,6 +91,7 @@ public class Student extends Model {
         String [] fields = {student.one,student.two,student.three,student.four,student.five,student.six,student.seven,student.eight};
         if(lectureNo != 0 && lectureNo <= fields.length){
             student.setAll(date,student,lectureNo-1);
+            student.save();
         }else {
             for (int i = 0; i < fields.length; i++) {
                 if (fields[i].equals("absent")) {
