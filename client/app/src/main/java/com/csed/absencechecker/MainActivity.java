@@ -4,31 +4,27 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
-import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.zip.GZIPInputStream;
 
 public class MainActivity extends Activity {
     public static final String DATA_PREFF = "dataPreff";
@@ -36,15 +32,19 @@ public class MainActivity extends Activity {
     JSONObject studentData = new JSONObject();
     private UserLoginTask mAuthTask;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
+    public void submitHandler(View target) {
         data = retrieveData();
+        JSONObject stData = createJSON(data);
+        submit(stData);
+    }
 
-        JSONObject ob = createJSON(data);
+    private void submit(JSONObject ob) {
 
         try {
             mAuthTask = new UserLoginTask(ob);
@@ -53,15 +53,7 @@ public class MainActivity extends Activity {
         }
         mAuthTask.execute((Void) null);
 
-        // submit();
-
     }
-
-//    private void submit() {
-//        mAuthTask = new UserLoginTask(, pwd);
-//        mAuthTask.execute((Void) null);
-//
-//    }
 
     private String[] retrieveData() {
         String macAddress = getMacAddress();
@@ -124,46 +116,37 @@ public class MainActivity extends Activity {
 
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
+        private static final String SUBMIT_URL = "http://192.168.1.222:9000/students/submit";
         private String macAddress;
         private String date;
+        private String resultstring;
 
         UserLoginTask(JSONObject stData) throws JSONException {
-                date = stData.getString("date");
-                macAddress = stData.getString("macAddress");
-            }
-
+            date = stData.getString("date");
+            macAddress = stData.getString("macAddress");
+        }
 
         @Override
         protected Boolean doInBackground(Void... params) {
-            Log.i("doInBackground", "doInBackground");
 
             try {
-                String[] stData = retrieveData();
-                JSONObject jsData = createJSON(stData);
 
-                HttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppostreq = new HttpPost("http://192.168.1.222:9000/students/submit");
+                JSONObject jsData = getJsonObject();
+
+                HttpClient httpClient = new DefaultHttpClient();
+                HttpPost httpPost = new HttpPost(SUBMIT_URL);
                 StringEntity se = new StringEntity(jsData.toString());
-                Log.i("VSV",jsData.toString());
 
                 se.setContentType("application/json;charset=UTF-8");
                 se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json;charset=UTF-8"));
-                httppostreq.setEntity(se);
-                // Execute HTTP Post Request
-                HttpResponse response = httpclient.execute(httppostreq);
-                HttpEntity resultentity = response.getEntity();
-                Log.i("RE", resultentity.toString());
+                httpPost.setEntity(se);
 
-                if (resultentity != null) {
-                    InputStream inputstream = resultentity.getContent();
-                    Header contentencoding = response.getFirstHeader("Content-Encoding");
-                    if (contentencoding != null && contentencoding.getValue().equalsIgnoreCase("gzip")) {
-                        inputstream = new GZIPInputStream(inputstream);
-                    }
-                    String resultstring = convertStreamToString(inputstream);
-                    Log.i("RESULT",resultstring);
-                    inputstream.close();
-                }
+                // Execute HTTP Post Request
+                HttpResponse response = httpClient.execute(httpPost);
+                HttpEntity responseEntity = response.getEntity();
+
+                resultstring = getStatus(responseEntity);
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -177,22 +160,45 @@ public class MainActivity extends Activity {
             return true;
         }
 
-        private String convertStreamToString(InputStream is) {
-            String line = "";
-            StringBuilder total = new StringBuilder();
-            BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+        private JSONObject getJsonObject() {
+            String[] stData = retrieveData();
+            return createJSON(stData);
+        }
+
+        private String getStatus(HttpEntity entity) {
+            String status = null;
             try {
-                while ((line = rd.readLine()) != null) {
-                    total.append(line);
+                if (entity != null) {
+                    String retSrc = EntityUtils.toString(entity);
+
+                    // parsing JSON
+                    JSONObject result = new JSONObject(retSrc);
+
+                    status = result.getString("status");
                 }
-            } catch (Exception e) {
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
-            return total.toString();
+            return status;
         }
 
         @Override
         protected void onPostExecute(final Boolean success) {
+            TextView statusView = (TextView) findViewById(R.id.statusTextView);
+            String status = setStatus(resultstring);
+            statusView.setText(status);
+        }
+
+        private String setStatus(String resultString){
+            String message;
+            if (resultString.equals("success")){
+                message = "You have successfully registered your attendance !";
+            }else{
+                message = "Something went wrong, please contact your professor.";
+            }
+            return message;
         }
 
         @Override

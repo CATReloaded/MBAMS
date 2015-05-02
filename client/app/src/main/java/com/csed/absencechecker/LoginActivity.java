@@ -305,6 +305,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
      */
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
+        private static final String SIGNUP_URL = "http://192.168.1.222:9000/students/signup";
         private final String name;
         private final Long id;
         private final String macAddress;
@@ -313,7 +314,6 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             this.name = name;
             this.id = id;
             macAddress = getMacAddress();
-
         }
 
         @Override
@@ -321,8 +321,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             try {
 
                 // Add your data
-                JSONObject jsonobj; // declared locally so that it destroys after serving its purpose
-                jsonobj = new JSONObject();
+                JSONObject jsonobj = new JSONObject();
                 try {
                     // adding keys
                     jsonobj.put("id", id);
@@ -331,15 +330,15 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                     ex.printStackTrace();
                 }
 
-                HttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppostreq = new HttpPost("http://192.168.1.222:9000/students/signup");
+                HttpClient httpClient = new DefaultHttpClient();
+                HttpPost httpPost = new HttpPost(SIGNUP_URL);
                 StringEntity se = new StringEntity(jsonobj.toString());
 
                 se.setContentType("application/json;charset=UTF-8");
                 se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json;charset=UTF-8"));
-                httppostreq.setEntity(se);
+                httpPost.setEntity(se);
                 // Execute HTTP Post Request
-                HttpResponse response = httpclient.execute(httppostreq);
+                HttpResponse response = httpClient.execute(httpPost);
                 HttpEntity resultentity = response.getEntity();
 
                 if (resultentity != null) {

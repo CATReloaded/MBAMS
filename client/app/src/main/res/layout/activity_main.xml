@@ -9,9 +9,19 @@
     tools:context="com.csed.absencechecker.MainActivity">
 
     <TextView
-        android:id="@+id/txt"
+        android:id="@+id/statusTextView"
         android:text="@string/hello_world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit my Attendance"
+        android:id="@+id/submit"
+        android:onClick="submitHandler"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp" />
 
 </RelativeLayout>
