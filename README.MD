@@ -2,28 +2,30 @@
 
 MBAMS is a Mobile-based Attendance Management System.
 
-  - Web Application for professors (server) <br />
+  - Web Application for instructors (server) <br />
      The web application is written in `Java` using `Play Framework`.
-  - Android Application for students (client)
+     Based on [Computer Database Java](https://github.com/typesafehub/activator-computer-database-java)
+  - Android Application for attendants (client)
  
 ##Screenshots
+
 ![Web Application](http://www.pictureshack.us/images/28094_students-db.png)
 
-![Android Application signup](http://www.pictureshack.us/images/74122_Screenshot_2015-05-03-17-42-26.png)
+![Android Application signup](http://www.pictureshack.us/images/38828_Screenshot_2015-05-03-21-39-11.png)
 
-![Android Application signin](http://www.pictureshack.us/images/23380_Screenshot_2015-05-03-17-44-39.png)
+![Android Application signin](http://www.pictureshack.us/images/10010_Screenshot_2015-05-03-21-42-56.png)
 
 ## Version
 1.0
 
 ##Features:
-1. Web application consists of a MySQL database, with full CRUD operations.
-2. The professor uses the web app to mange his students attendances by selecting the lecture number every lecture.
-3. The Android Application can connect to the web app.
-4. The first time, the student has to sign up in the system just by entering his ID.
-5. Every Lecture the student can submit his attendance just by one click!
-6. The web app responds to the android app, so that the student can make sure he had submitted his attendance successfully.
-7. The android app can't submit attendance to more than one student. ONLY ONE!
+* Web application consists of a MySQL database, with full CRUD operations.
+* The instructor uses the web app to mange his attendants attendances by selecting the lecture number every lecture.
+* The Android Application can connect to the web app.
+* The first time, the attendant has to sign up in the system just by entering his ID.
+* Every Lecture the attendant can submit his attendance just by one click!
+* The web app responds to the android app, so that the attendant can make sure he had submitted his attendance successfully.
+* The android app can't submit attendance to more than one attendant. ONLY ONE!
 
 ## How to build MBAMS
 
@@ -58,8 +60,8 @@ change `db.default.user` and `db.default.pass` to your user & password for the d
 
 	String | Value
 	------------ | -------------
-	`serverURL` |  The IP of your machine that runs the web app follwing with the port number `9000`
-	`wifiName` | The name of the wifi that you will create for the students.
+	`serverURL` |  The IP of your machine that runs the web app following with the port number `9000`
+	`wifiName` | The name of the wifi that you will create for the attendants.
 	`wifiPassword` | The password of above wifi
 	`siginURL` | The route of the sign in in the web app.<br /> _Don't change it if you didn't change it in the web app._
 	`submitURL` | The route of the submit attenance in the web app. <br /> _Don't change it if you didn't change it in the web app._
