@@ -1,5 +1,5 @@
-New log file opened at Sat May 02 15:37:33 EEST 2015 by 2857@home-laptop
-jvm 2857@home-laptop
+New log file opened at Sun May 03 03:20:47 EEST 2015 by 19076@home-laptop
+jvm 19076@home-laptop
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/ahmad/absence-database-java/server/project, returning: (server-build)
 Loading project definition from /home/ahmad/absence-database-java/server/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@7baef19a, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4f449016, check cycles: false
 [info] Updating {file:/home/ahmad/absence-database-java/server/project/}server-build...
 Updating {file:/home/ahmad/absence-database-java/server/project/}server-build...
 Other repositories:
@@ -16339,7 +16339,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 6629ms :: artifacts dl 90ms
+:: resolution report :: resolve 6855ms :: artifacts dl 139ms
 	report for default#server-build;0.1-SNAPSHOT compile produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-compile.xml
 	report for default#server-build;0.1-SNAPSHOT runtime produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-runtime.xml
 	report for default#server-build;0.1-SNAPSHOT test produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-test.xml
@@ -16353,7 +16353,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#server-build;0.1-SNAPSHOT docs produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-docs.xml
 	report for default#server-build;0.1-SNAPSHOT pom produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-pom.xml
 	report for default#server-build;0.1-SNAPSHOT scala-tool produced in /home/ahmad/absence-database-java/server/project/target/resolution-cache/reports/default-server-build-scala-tool.xml
-	resolve done (6629ms resolve - 90ms download)
+	resolve done (6855ms resolve - 139ms download)
 [info] Done updating.
 Done updating.
 
@@ -16395,7 +16395,7 @@ Set current project to computer-database-java (in build file:/home/ahmad/absence
 > server-handle-next-server-request
 > {file:/home/ahmad/absence-database-java/server/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@7f58cd38, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@39a2d5af, check cycles: false
 Read from stdout: Updating {file:/home/ahmad/absence-database-java/server/}root...
 Updating {file:/home/ahmad/absence-database-java/server/}root...
 Other repositories:
@@ -16410,7 +16410,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.4 ...
 Resolving org.scala-lang#scala-library;2.11.4 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52d5a075
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b04f47
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.4
 	found org.scala-lang#scala-library;2.11.4 in sbt-chain
 	[2.11.4] org.scala-lang#scala-library;2.11.4
@@ -23460,7 +23460,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2529ms :: artifacts dl 57ms
+:: resolution report :: resolve 2601ms :: artifacts dl 87ms
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT compile produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-compile.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT runtime produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-runtime.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT test produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-test.xml
@@ -23475,7 +23475,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT pom produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-pom.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT scala-tool produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-scala-tool.xml
 	report for computer-database-java#computer-database-java_2.11;0.0.1-SNAPSHOT fork-run produced in /home/ahmad/absence-database-java/server/target/resolution-cache/reports/computer-database-java-computer-database-java_2.11-fork-run.xml
-	resolve done (2529ms resolve - 57ms download)
+	resolve done (2601ms resolve - 87ms download)
 Read from stdout: Done updating.
 Done updating.
 Read from stdout: There may be incompatibilities among your library dependencies.
@@ -23486,43 +23486,44 @@ Read from stdout: 	* org.webjars:jquery:1.11.1 -> 2.1.1
 	* org.webjars:jquery:1.11.1 -> 2.1.1
 Read from stdout: Run 'evicted' to see detailed eviction warnings
 Run 'evicted' to see detailed eviction warnings
-Total time: 3 s, completed May 2, 2015 3:37:54 PM
+Total time: 3 s, completed May 3, 2015 3:21:09 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@57a41ee, check cycles: false
-Total time: 0 s, completed May 2, 2015 3:37:55 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a2eadd8, check cycles: false
+Total time: 0 s, completed May 3, 2015 3:21:10 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/ahmad/absence-database-java/server/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@15438ad0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4334b19e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set()
-	modified: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala)
+	added: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala, /home/ahmad/absence-database-java/server/app/models/Student.java, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /home/ahmad/absence-database-java/server/app/controllers/Application.java, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala)
+Initial directly invalidated sources: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala, /home/ahmad/absence-database-java/server/app/models/Student.java, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /home/ahmad/absence-database-java/server/app/controllers/Application.java, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala)
+All initially invalidated sources: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala, /home/ahmad/absence-database-java/server/app/models/Student.java, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /home/ahmad/absence-database-java/server/app/controllers/Application.java, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala, /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java)
 
-Read from stdout: Compiling 2 Scala sources to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
-Compiling 2 Scala sources to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
+Recompiling all 10 sources: invalidated sources (10) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 3 Java sources to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
+Compiling 7 Scala sources and 3 Java sources to /home/ahmad/absence-database-java/server/target/scala-2.11/classes...
 Getting compiler-interface from component compiler for Scala 2.11.4
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.4
 Other repositories:
 Default repositories:
-Running cached compiler 94d3fe9, interfacing (CompilerInterface) with Scala compiler version 2.11.4
+Running cached compiler 28c1c5c6, interfacing (CompilerInterface) with Scala compiler version 2.11.4
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -23532,7 +23533,110 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/ahmad/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar
 	-classpath
 	/home/ahmad/absence-database-java/server/target/scala-2.11/classes:/home/ahmad/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/ahmad/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/ahmad/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/ahmad/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/ahmad/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/ahmad/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/ahmad/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/ahmad/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/ahmad/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/ahmad/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/ahmad/.ivy2/cache/io.netty/netty/bundles/netty-3.9.3.Final.jar:/home/ahmad/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/ahmad/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/ahmad/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/ahmad/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/ahmad/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/ahmad/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/ahmad/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/ahmad/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/ahmad/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/ahmad/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/ahmad/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/ahmad/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/ahmad/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/ahmad/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/ahmad/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/ahmad/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/ahmad/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/ahmad/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/ahmad/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/ahmad/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/ahmad/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/ahmad/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/ahmad/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/ahmad/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/ahmad/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/home/ahmad/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.8.jar:/home/ahmad/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/home/ahmad/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/home/ahmad/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/ahmad/.ivy2/cache/org.webjars/jquery/jars/jquery-2.1.1.jar:/home/ahmad/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.1.jar:/home/ahmad/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
-Scala compilation took 4.993756875 s
+Scala compilation took 12.996298994 s
+Attempting to call com.sun.tools.javac.api.JavacTool@4f57c1f7 directly...
+Java compilation took 0.997079564 s
+Java analysis took 0.236097446 s
+Java compile + analysis took 1.239122848 s
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, editForm, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+Invalidating /home/ahmad/absence-database-java/server/app/models/Student.java...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/app/models/Student.java...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/app/models/Student.java)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/app/models/Student.java)
+The /home/ahmad/absence-database-java/server/app/models/Student.java source file has the following regular definitions changed:
+	addPropertyChangeListener, setFive, notify, _ebean_setFieldIntercept, idType, find, cancel, findPagingList, mac, refresh, name, removePropertyChangeListener, findUnique, findFutureRowCount, nextId, findFutureList, findByStudent_id, setParameter, wait, server, serialVersionUID, four, deleteManyToManyAssociations, setListener, three, setId, equals, getMaxRows, setOne, _ebean_createCopy, serverName, findVisit, all, page, setReadOnly, Model$Finder, two, _ebean_setEmbeddedLoaded, recordAttendance, query, _ebean_getIntercept, setTimeout, ref, getFirstRow, setQuery, setOrder, _ebean_getFieldNames, byId, setAutofetch, setFour, _ebean_getField, notifyAll, _ebean_isEmbeddedNewOrDirty, setUseQueryCache, findByMac, filter, setRawSql, select, getExpressionFactory, filterMany, _ebean_getMarker, six, setUseCache, <init>, id, on, isForUpdate, setTwo, findSet, seven, saveManyToManyAssociations, getRawSql, order, _ebean_newInstance, findRowCount, setThree, setSix, orderBy, setMaxRows, findFutureIds, delete, findIds, fetch, recordMac, copy, setLoadBeanCache, toString, setAll, getGeneratedSql, isAutofetchTuned, five, setMapKey, setBufferFetchSizeHint, where, setFirstRow, setSeven, setOrderBy, findIterate, getClass, update, type, setEight, save, having, setDistinct, setMac, Student, student_id, findList, _ebean_setField, setBackgroundFetchAfter, one, setForUpdate, _ebean_intercept, hashCode, eight, findMap, _ebean_getFieldIntercept.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala: Set(<init>, id, delete, update, Student)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/models/Student.java
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala: Set(<init>, save, Student)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala: Set(mac, name, four, three, two, six, <init>, id, seven, order, five, Student, student_id, one, eight)
+Invalidating /home/ahmad/absence-database-java/server/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/app/controllers/Application.java...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/app/controllers/Application.java)
+The /home/ahmad/absence-database-java/server/app/controllers/Application.java source file has the following regular definitions changed:
+	enumerator, takeAttendance, notify, FROM, movedPermanently, CONTENT_LANGUAGE, CREATED, temporaryRedirect, Results$StringChunks$WhenReadyStringChunks, WARNING, CONTINUE, SET_COOKIE2, channel, CONTENT_TYPE, Results$Redirect, badRequest, wait, ACCESS_CONTROL_ALLOW_METHODS, USER_AGENT, ctx, HOST, CONTENT_MD5, request, BAD_REQUEST, MAX_FORWARDS, redirect, TRAILER, PROXY_AUTHENTICATE, AUTHORIZATION, CACHE_CONTROL, NOT_IMPLEMENTED, equals, PAYMENT_REQUIRED, RETRY_AFTER, PRECONDITION_FAILED, CONFLICT, ACCEPT_CHARSET, Results$ByteChunks$WhenReadyByteChunks, onReady, VIA, REQUEST_TIMEOUT, MULTIPLE_CHOICES, notFound, MOVED_PERMANENTLY, TE, CONTENT_LOCATION, PARTIAL_CONTENT, ETAG, LENGTH_REQUIRED, UNAUTHORIZED, UNSUPPORTED_MEDIA_TYPE, create, REFERER, REQUEST_ENTITY_TOO_LARGE, ORIGIN, ACCEPT_LANGUAGE, NOT_MODIFIED, as, Results$StringChunks, Results$Todo, HTTP_VERSION_NOT_SUPPORTED, ACCESS_CONTROL_ALLOW_ORIGIN, Results$Status, IF_RANGE, IF_UNMODIFIED_SINCE, toScala, SWITCHING_PROTOCOLS, callback, TEMPORARY_REDIRECT, CONTENT_LENGTH, SET_COOKIE, notifyAll, AGE, BAD_GATEWAY, EXPECTATION_FAILED, CONNECTION, Results$ByteChunks, Results$Chunks$Out, OK, edit, ACCESS_CONTROL_ALLOW_HEADERS, found, unauthorized, response, FOUND, <init>, DATE, CONTENT_RANGE, TRANSFER_ENCODING, PROXY_AUTHORIZATION, GONE, ACCESS_CONTROL_ALLOW_CREDENTIALS, clearLang, NOT_ACCEPTABLE, status, EXPECT, LOCATION, VARY, WWW_AUTHENTICATE, Application, TODO, forbidden, delete, ACCEPTED, NO_CONTENT, disconnected, INTERNAL_SERVER_ERROR, onDisconnected, UPGRADE, NOT_FOUND, session, ACCEPT_ENCODING, EXPIRES, seeOther, REQUESTED_RANGE_NOT_SATISFIABLE, toString, wrappedResult, ACCEPT, changeLang, GATEWAY_TIMEOUT, whenReady, SERVER, ACCESS_CONTROL_REQUEST_METHOD, ACCESS_CONTROL_MAX_AGE, LAST_MODIFIED, ACCESS_CONTROL_EXPOSE_HEADERS, ACCESS_CONTROL_REQUEST_HEADERS, flash, internalServerError, ok, ALLOW, COOKIE, IF_MODIFIED_SINCE, getClass, signup, CONTENT_TRANSFER_ENCODING, update, lang, NON_AUTHORITATIVE_INFORMATION, close, PRAGMA, save, IF_MATCH, PROXY_AUTHENTICATION_REQUIRED, RESET_CONTENT, SEE_OTHER, CONTENT_ENCODING, RANGE, USE_PROXY, Results$Chunks, REQUEST_URI_TOO_LONG, writable, lectureNo, FORBIDDEN, METHOD_NOT_ALLOWED, write, IF_NONE_MATCH, ACCEPT_RANGES, noContent, GO_HOME, list, SERVICE_UNAVAILABLE, index, created, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala: Set(takeAttendance, create, edit, <init>, Application, delete, getClass, signup, update, save, list, index)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala: Set(takeAttendance, create, edit, <init>, Application, delete, getClass, signup, update, save, list, index)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, main, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala: Set(format, _display_, main, apply, ==, !=)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala: Set(format, _display_, main, apply, render)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala: Set(format, _display_, main, apply, render)
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
+	takeAttendance, notify, wait, $asInstanceOf, list$default$3, equals, asInstanceOf, list$default$2, synchronized, $isInstanceOf, create, ReverseAssets, notifyAll, isInstanceOf, edit, <init>, at, ==, clone, delete, list$default$5, toString, !=, getClass, signup, update, save, ne, eq, list$default$4, ReverseApplication, list$default$1, ##, list, finalize, index, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala: Set(<init>, delete, update, list)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala: Set(<init>, at, index)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala: Set(<init>, save, list)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala: Set(create, edit, <init>, ==, !=, list)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, createForm, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java source file has the following regular definitions changed:
+	notify, Assets, routes$ref, wait, routes, equals, routes$javascript, notifyAll, <init>, Application, toString, getClass, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala: Set(routes, <init>, Application)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/main.template.scala: Set(Assets, routes, <init>, Application)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala: Set(routes, <init>, Application)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala: Set(routes, <init>, Application)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/controllers/routes.java
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/list.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, list, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/ahmad/absence-database-java/server/app/controllers/Application.java
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_routing.scala source file has the following regular definitions changed:
+	notify, badRequest, wait, $asInstanceOf, routes, controllers_Application_save5_route, createInvoker, equals, controllers_Application_create4_invoker, prefix, asInstanceOf, documentation, controllers_Application_save5_invoker, controllers_Application_index0_invoker, synchronized, $isInstanceOf, controllers_Application_delete8_invoker, handlerFor, controllers_Assets_at9_route, controllers_Application_edit6_invoker, _prefix, notifyAll, controllers_Application_list1_invoker, controllers_Application_update7_route, controllers_Application_takeAttendance3_invoker, isInstanceOf, controllers_Application_list1_route, controllers_Application_edit6_route, controllers_Application_update7_invoker, controllers_Application_takeAttendance3_route, ==, clone, controllers_Application_signup2_invoker, controllers_Application_delete8_route, Routes, controllers_Application_create4_route, toString, !=, fakeValue, getClass, setPrefix, controllers_Application_index0_route, ne, call, controllers_Application_signup2_route, controllers_Assets_at9_invoker, eq, defaultPrefix, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/src_managed/main/routes_reverseRouting.scala: Set(prefix, _prefix, ==, Routes, getClass, defaultPrefix)
+Invalidating /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala...
+Invalidating (transitively) by inheritance from /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala...
+Initial set of included nodes: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala)
+Invalidated by transitive inheritance dependency: Set(/home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala)
+The /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/twitterBootstrapInput.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, twitterBootstrapInput, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/editForm.template.scala: Set(format, _display_, apply, render, twitterBootstrapInput)
+The following modified names cause invalidation of /home/ahmad/absence-database-java/server/target/scala-2.11/twirl/main/views/html/createForm.template.scala: Set(format, _display_, apply, render, twitterBootstrapInput)
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -23547,13 +23651,6 @@ Copy resource mappings:
 	(/home/ahmad/absence-database-java/server/conf/evolutions/default,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default)
 	(/home/ahmad/absence-database-java/server/conf/evolutions/default/1.sql,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default/1.sql)
 	(/home/ahmad/absence-database-java/server/conf/evolutions/default/2.sql,/home/ahmad/absence-database-java/server/target/scala-2.11/classes/evolutions/default/2.sql)
-Total time: 6 s, completed May 2, 2015 3:38:02 PM
+Total time: 17 s, completed May 3, 2015 3:21:28 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 2857@home-laptop logs at Sat May 02 15:40:35 EEST 2015, goodbye.

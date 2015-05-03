@@ -1,10 +1,7 @@
-New log file opened at Sat May 02 15:40:41 EEST 2015 by 3413@home-laptop
-Taking next connection to: 39058
-New client attempting to connect on port: 34618-39058
-  Address = /127.0.1.1:39058
-This client on port 34618 has uuid ed2b46b4-3096-4eb5-9368-94518bb9fb12 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-ed2b46b4-3096-4eb5-9368-94518bb9fb12
-Taking next connection to: 39058
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 39058
+New log file opened at Sun May 03 03:22:19 EEST 2015 by 19506@home-laptop
+Taking next connection to: 57867
+New client attempting to connect on port: 41255-57867
+  Address = /127.0.1.1:57867
+This client on port 41255 has uuid 7ac28571-b616-415c-88c0-3f085e04eb60 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-7ac28571-b616-415c-88c0-3f085e04eb60
+Taking next connection to: 57867

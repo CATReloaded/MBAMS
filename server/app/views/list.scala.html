@@ -55,28 +55,18 @@
 
     <div id="actions">
         
-        <form action="@link(0, "name")" method="GET">
+        <form action="@link(0, "name")" method="GET" style="display: inline-block">
             <input type="search" id="searchbox" name="f" value="@currentFilter" placeholder="Filter by student name...">
             <input type="submit" id="searchsubmit" value="Filter by name" class="btn primary">
         </form>
 
-        <form action="@setLecNo()" method="GET">
+        <form action="@setLecNo()" method="GET" style="display: inline-block">
             <input type="number" id="lecNo" name="lecture" value="@lectureNo" placeholder="Enter the lecture no ...">
             <input type="submit" id="submitNo" value="Submit Lecture No" class="btn primary">
         </form>
         
         <a class="btn success" id="add" href="@routes.Application.create()">Add a new student</a>
 
-        @*@helper.form(action = routes.Application.upload, 'enctype -> "multipart/form-data") {*@
-
-            @*<input type="file" name="picture">*@
-
-            @*<p>*@
-                @*<input type="submit">*@
-            @*</p>*@
-
-        @*}*@
-        
     </div>
 
 
