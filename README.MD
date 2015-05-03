@@ -2,24 +2,24 @@
 
 MBAMS is a Mobile-based Attendance Management System.
 
-  - Web Apllication for professors (server) <br />
+  - Web Application for professors (server) <br />
      The web application is written in `Java` using `Play Framework`.
   - Android Application for students (client)
  
 ##Screenshots
 ![Web Application](http://www.pictureshack.us/images/28094_students-db.png)
 
-![Android Applicaton signup](http://www.pictureshack.us/images/74122_Screenshot_2015-05-03-17-42-26.png)
+![Android Application signup](http://www.pictureshack.us/images/74122_Screenshot_2015-05-03-17-42-26.png)
 
-![Android Applicaton signin](http://www.pictureshack.us/images/23380_Screenshot_2015-05-03-17-44-39.png)
+![Android Application signin](http://www.pictureshack.us/images/23380_Screenshot_2015-05-03-17-44-39.png)
 
 ## Version
 1.0
 
 ##Features:
 1. Web application consists of a MySQL database, with full CRUD operations.
-2. The professor uses the web app to mange his students attendances by selsecting the lecture number every lecture.
-3. The Android Appliction can connect to the web app.
+2. The professor uses the web app to mange his students attendances by selecting the lecture number every lecture.
+3. The Android Application can connect to the web app.
 4. The first time, the student has to sign up in the system just by entering his ID.
 5. Every Lecture the student can submit his attendance just by one click!
 6. The web app responds to the android app, so that the student can make sure he had submitted his attendance successfully.
@@ -30,7 +30,7 @@ MBAMS is a Mobile-based Attendance Management System.
 ###For the web application:
 1. You need `Play Framework` installed: 
 Follow the instructions [here](https://www.playframework.com/documentation/2.0/Installing)
-2. You need mysql installed
+2. You need MySQL installed
 3. Create a database with the name `students`
 4. Clone the repo: <br />
     ```sh
@@ -54,7 +54,7 @@ change `db.default.user` and `db.default.pass` to your user & password for the d
     Android Studio: http://developer.android.com/sdk/installing/studio.html  <br />
 
 2. Import the project in Android Studio
-3. Change the congigurations strings values:
+3. Change the configurations strings values:
 
 	String | Value
 	------------ | -------------
