@@ -5,5 +5,14 @@
     <string name="title_activity_main">Absence Checker</string>
     <string name="status">Status</string>
     <string name="action_settings">Settings</string>
+    <string name="submitButton">Submit my Attendance</string>
+
+    <!--Configuration Part-->
+    <string name="serverURL">http://192.168.1.222:9000</string>
+    <string name="wifiName">ICODER</string>
+    <string name="wifiPassword">passwordXD</string>
+    <string name="siginURL">/students/signup</string>
+    <string name="submitURL">/students/submit</string>
+
 
 </resources>

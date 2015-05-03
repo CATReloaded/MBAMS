@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -116,11 +119,12 @@ public class MainActivity extends Activity {
 
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
-        private static final String SUBMIT_URL = "http://192.168.1.222:9000/students/submit";
+        private final String SUBMIT_URL = getString(R.string.serverURL) + getString(R.string.submitURL);
         private String macAddress;
         private String date;
         private String resultstring;
         private Map<String, Object> results;
+        private boolean successConnection;
 
         UserLoginTask(JSONObject stData) throws JSONException {
             date = stData.getString("date");
@@ -131,29 +135,38 @@ public class MainActivity extends Activity {
         protected Boolean doInBackground(Void... params) {
 
             try {
-
+                successConnection = false;
                 JSONObject jsData = getJsonObject();
                 parseJSON(jsData);
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(SUBMIT_URL);
                 StringEntity se = new StringEntity(jsData.toString());
-
+                Log.i("SE", "SE");
                 se.setContentType("application/json;charset=UTF-8");
                 se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json;charset=UTF-8"));
                 httpPost.setEntity(se);
+                Log.i("SE2", "SE2");
 
                 // Execute HTTP Post Request
-                HttpResponse response = httpClient.execute(httpPost);
-                HttpEntity responseEntity = response.getEntity();
+                try {
+                    HttpResponse response = httpClient.execute(httpPost);
+                    StatusLine status = response.getStatusLine();
+                    if (status.getStatusCode() == HttpStatus.SC_OK) {
+                        HttpEntity responseEntity = response.getEntity();
+                        String retSrc = EntityUtils.toString(responseEntity);
+                        JSONObject result = new JSONObject(retSrc); //Convert String to JSON Object
+                        Log.i("result", "result");
+                        results = parseJSON(result);
+                        successConnection = true;
+                        Log.i("results", "results");
+                    }
+                    Log.i("response", "response");
 
-                String retSrc = EntityUtils.toString(responseEntity);
-                JSONObject result = new JSONObject(retSrc); //Convert String to JSON Object
-
-                results = parseJSON(result);
-
+                } catch (Exception e) {
+                    successConnection = false;
+                    e.printStackTrace();
+                }
             } catch (IOException e) {
-                e.printStackTrace();
-            } catch (JSONException e) {
                 e.printStackTrace();
             }
 
@@ -184,12 +197,20 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(final Boolean success) {
             TextView statusView = (TextView) findViewById(R.id.statusTextView);
-            String status = setStatus(results.get("status").toString());
-            statusView.setText(status);
-            String res = "Your name: " + results.get("name").toString();
-            res += "\n" +"Lecture number: " + results.get("lecture#").toString();
             TextView resView = (TextView) findViewById(R.id.dataView);
-            resView.setText(res);
+            if (successConnection) {
+                if (results.containsKey("status")) {
+                    String status = setStatus(results.get("status").toString());
+                    statusView.setText(status);
+                    if (results.containsKey("name")) {
+                        String res = "Your name: " + results.get("name").toString();
+                        res += "\n" + "Lecture number: " + results.get("lecture#").toString();
+                        resView.setText(res);
+                    }
+                }
+            } else {
+                statusView.setText("Something went wrong, make sure you are connected to the same local network with your professor!");
+            }
         }
 
         private String setStatus(String resultString) {
@@ -201,7 +222,7 @@ public class MainActivity extends Activity {
                     message = "We can't identify you! Please contact your professor.";
                 }
             } else {
-                message = "Something went wrong, make sure you are connect to the same local network with your professor!";
+                message = "Something went wrong, make sure you are connected to the same local network with your professor!";
             }
             return message;
         }

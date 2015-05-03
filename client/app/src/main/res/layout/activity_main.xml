@@ -10,18 +10,17 @@
 
     <TextView
         android:id="@+id/statusTextView"
-        android:text="@string/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/dataView"
-        android:layout_toEndOf="@+id/dataView" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit my Attendance"
+        android:text="@string/submitButton"
         android:id="@+id/submit"
         android:onClick="submitHandler"
         android:layout_marginBottom="68dp"
