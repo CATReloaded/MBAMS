@@ -1,7 +1,7 @@
-New log file opened at Sun May 03 03:22:19 EEST 2015 by 19506@home-laptop
-Taking next connection to: 57867
-New client attempting to connect on port: 41255-57867
-  Address = /127.0.1.1:57867
-This client on port 41255 has uuid 7ac28571-b616-415c-88c0-3f085e04eb60 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-7ac28571-b616-415c-88c0-3f085e04eb60
-Taking next connection to: 57867
+New log file opened at Sun May 03 19:59:48 EEST 2015 by 29330@home-laptop
+Taking next connection to: 40588
+New client attempting to connect on port: 35757-40588
+  Address = /127.0.1.1:40588
+This client on port 35757 has uuid d211d8bc-c541-4e91-b713-5256629c8c63 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-d211d8bc-c541-4e91-b713-5256629c8c63
+Taking next connection to: 40588
