@@ -24,6 +24,7 @@ MBAMS is a Mobile-based Attendance Management System.
 5. Every Lecture the student can submit his attendance just by one click!
 6. The web app responds to the android app, so that the student can make sure he had submitted his attendance successfully.
 7. The android app can't submit attendance to more than one student. ONLY ONE!
+
 ## How to build MBAMS
 
 ###For the web application:
