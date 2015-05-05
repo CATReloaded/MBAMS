@@ -7,6 +7,7 @@ server/*.iml
 server/logs
 server/target
 server/projectFilesBackup
+client/.idea
 logs
 project/project
 project/target
