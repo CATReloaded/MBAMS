@@ -14,8 +14,8 @@
           <value>
             <ProjectSettingsEntry>
               <option name="version" value="2.3.8" />
-              <option name="sourceDir" value="$PROJECT_DIR$/conf" />
-              <option name="confDir" value="$PROJECT_DIR$/app" />
+              <option name="sourceDir" value="$PROJECT_DIR$/app" />
+              <option name="confDir" value="$PROJECT_DIR$/conf" />
               <option name="templateImports">
                 <list>
                   <option value="play.api.templates.PlayMagic._" />
