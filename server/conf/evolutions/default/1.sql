@@ -4,9 +4,9 @@
 
 create table student (
   id                        bigint not null AUTO_INCREMENT,
-  student_id                VARCHAR(8) ,
-  name                      varchar(255),
-  mac                       varchar(17)  DEFAULT '-',
+  student_id                VARCHAR(8) not null UNIQUE,
+  name                      varchar(255) not null,
+  mac                       varchar(17)  UNIQUE,
   one                       varchar(255) DEFAULT '-',
   two                       varchar(255) DEFAULT '-',
   three                     varchar(255) DEFAULT '-',
