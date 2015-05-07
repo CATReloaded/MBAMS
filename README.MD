@@ -30,24 +30,23 @@ MBAMS is a Mobile-based Attendance Management System.
 ## How to build MBAMS
 
 ###For the web application:
-1. You need `Play Framework` installed: 
-Follow the instructions [here](https://www.playframework.com/documentation/2.0/Installing)
-2. You need MySQL installed
-3. Create a database with the name `students`
-4. Clone the repo: <br />
+1. You need MySQL installed
+2. Create a database with the name `students`
+3. Clone the repo: <br />
     ```sh
-       $ git clone [git@github.com:AhmadElMelegy/Absence-Checker.git] MBAMS
+       $ git clone git@github.com:CATReloaded/MBAMS.git MBAMS
     ```
 	
-5. Change the configuration to match yours: <br />
+4. Change the configuration to match yours: <br />
 	```sh
        $ nano MBAMS/server/conf/application.cong
     ```
 change `db.default.user` and `db.default.pass` to your user & password for the db.
-6. Run the app using: <br />
+5. Run the app using: <br />
     ```sh
        $ ./activator run
     ```
+
 ###For the Android application:
 
 1. Install the following software: <br />
